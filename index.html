@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/styles/css/index.css">
+    <script src="https://kit.fontawesome.com/d8bfb7b144.js" crossorigin="anonymous"></script>
+    <title>My Portfolio Page!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="bg-img">
+    <nav class="navbar">
+        <h1>My small portfolio</h1>
+        <ul id="sidemenu">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            <i class="fas fa-times" aria-hidden="true" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+    </nav>
+    <main>
+        <div class="hello-text">
+            <h1>Hello, I'm <span>Aleksi Natunen</span><br>From Finland</h1>
+                        <p>Software Engineering Student</p>
+
+            <div class="icons">
+                </a>
+                <a href="https://www.linkedin.com/in/aleksi-natunen-b67182357/">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/AlluNatu">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-img">
+                        <img src="./dist/img/alluzzi.jpg" >
+                    </div>
+                    <div class="about-col">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Hello and welcome! Thanks for stopping by my portfolio. My name is Aleksi, and I’m currently pursuing a Master’s degree in Software Engineering at LUT University. I’m 25 years old, and while I’m passionate about coding, I also enjoy spending my free time hanging out with friends and having fun beyond the screen.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Coding Languages</span><br>I have experience in C, Java, JavaScript, TypeScript, Python</li>
+                                <li><span>Front-end</span><br>I'm familiar with HTML, React, CSS and SASS.</li>
+                                <li><span>Backend</span><br>I have utilized Express, Morgan, MongoDB, Node.JS and many more, while completing my University Degree</li>
+                                <li><span>Databases</span><br>I can handle MySQL and PortgreSQL at a basic level</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>University</span><br>I have lot's of Software Engineering experience from my University, as I have done already 170ETCs.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Software Engineer LUT University</span><br>170ETCs Bacnelor's Degree (Soon to be ready)
+                                <br>0ETCs Master's Degree so far</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./dist/img/lutemon.jpg" alt="">
+                    <div class="layer">
+                        <h3>Lutemon Android Game</h3>
+                        <p>A game for Android devices. The game mimics the pokemon playstyle.</p>
+                        <a href="https://github.com/AlluNatu/Java_Project_LUTEMON"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./dist/img/Kuvakaappaus_20250915_213456.png" alt="">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>A quick and "easy" frontend tryout. Was really fun making and learning more and more.</p>
+                        <a href="https://github.com/AlluNatu/AlluNatu.github.io"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./dist/img/Kuvakaappaus_20250915_214521.png" alt="">
+                    <div class="layer">
+                        <h3>Notes app</h3>
+                        <p>React and express based Notes app.</p>
+                        <a href="https://github.com/AlluNatu/AdvancedWEB/tree/main/prokkis"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <!-- Here all of the ones that are updated on buttonclck -->
+                <div class="work hidden">
+                    <img src="./dist/img/Kuvakaappaus_20250917_094446.png" alt="">
+                    <div class="layer">
+                        <h3>JS Platform Jumping Game</h3>
+                        <p>Basic JS and Phaser based platform jumping game.</p>
+                        <a href="https://github.com/AlluNatu/SmallJSGame"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+        <a class="loadmore" onclick="loadmoreFunction(event)">Load more</a>
+    </div>
+        
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact me</h1>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>045 8536070</p>
+                <br>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>aleksi.natunen@hotmail.fi</p>
+            </div>
+        </div>
+    </main>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

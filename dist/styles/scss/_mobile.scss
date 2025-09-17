@@ -1,0 +1,65 @@
+@include mediaSm{
+
+    #about{
+        .row{
+            .about-col-img, .about-col{
+                flex-basis: 100%;
+            }
+
+            .about-col{
+                margin-bottom: 30px;
+
+                .tab-titles{
+                    .tab-links{
+                        font-size: 16px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    nav{
+        .fas{
+            display: block;
+            font-size: 25px;
+        }
+
+
+        h1{
+            font-size: 30px;
+        }
+
+        ul{
+            background: $secondary-color;
+            position: fixed;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s;
+
+            li{
+                display: block;
+                margin: 25px;
+            }
+
+            .fas{
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+}
